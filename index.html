@@ -17,6 +17,7 @@
             <a href="#home">home</a>
             <a href="#about">about</a>
             <a href="#services">services</a>
+            <a href="#gallery">gallery</a>
             <a href="#portfolio">portfolio</a>
             <a href="#perform">perform</a>
             <a href="#contact">contact</a>
@@ -42,7 +43,7 @@
 
         <div class="row">
             <div class="image">
-                <img src="img/menang.jpg" alt="risal 3" class="tilt">
+                <img src="img/gtg.jfif" alt="risal" class="tilt">
             </div>
 
             <div class="content">
@@ -110,6 +111,26 @@
         </div>
     </section>
     <!--akhir section services-->
+
+    <!--awal section gallery-->
+    <section class="gallery" id="gallery">
+        <h1 class="heading"> my <span>gallery</span> </h1>
+
+        <div class="box-container">
+            <div class="box tilt"><img src="img/K-1.jfif" alt="gambar 1"></div>
+            <div class="box tilt"><img src="img/K-2.jfif" alt="gambar 2"></div>
+            <div class="box tilt"><img src="img/K-3.jfif" alt="gambar 3"></div>
+            <div class="box tilt"><img src="img/K-4.jfif" alt="gambar 4"></div>
+            <div class="box tilt"><img src="img/K-5.jfif" alt="gambar 5"></div>
+            <div class="box tilt"><img src="img/K-6.jfif" alt="gambar 6"></div>
+
+            <div class="popup-image">
+                <span>&times;</span>
+                <img src="img/K-1.jfif" alt="gambar 1">
+            </div>
+        </div>
+    </section>
+    <!--akhir section gallery-->
 
     <!--awal section portfolio-->
     <section class="portfolio" id="portfolio">
@@ -254,6 +275,17 @@
         VanillaTilt.init(document.querySelectorAll('.tilt'),{
             max:25
         });
+
+        document.querySelectorAll('.box-container img').forEach(image =>{
+            image.onclick = () =>{
+                document.querySelector('.popup-image').style.display = 'block';
+                document.querySelector('.popup-image img').src = image.getAttribute('src');
+            }
+        });
+
+        document.querySelector('.popup-image span').onclick = () =>{
+            document.querySelector('.popup-image').style.display = 'none';
+        }
     </script>
 </body>
 </html>

@@ -91,7 +91,7 @@ header .navbar {
 }
 
 header .navbar a {
-    padding: 1.5rem;
+    padding: 1rem;
     font-size: 2rem;
     color: #222;
 }
@@ -262,6 +262,61 @@ header .navbar a:hover {
     font-size: 1.7rem;
     padding: 1rem 0;
     line-height: 2;
+}
+
+.gallery .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.gallery .box-container .box {
+    flex: 1 1 30rem;
+    border-radius: .5rem;
+    border: 1rem solid #fff;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    position: relative;
+    overflow: hidden;
+    height: 25rem;
+}
+
+.gallery .box-container .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.gallery .box-container .popup-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+
+.gallery .box-container .popup-image span {
+    position: absolute;
+    top: 0;
+    right: 7rem;
+    font-size: 3.5rem;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.gallery .box-container .popup-image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: .5rem solid #fff;
+    border-radius: .5rem;
+    width: 750px;
+    object-fit: cover;
 }
 
 .portfolio .box-container {
@@ -442,6 +497,17 @@ header .navbar a:hover {
     header .navbar a {
         display: block;
         font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery .box-container .popup-image img {
+        width: 95%;
+    }
+
+    .gallery .box-container .popup-image span {
+        right: 1rem;
+        top: 1.5rem;
     }
 }
 
