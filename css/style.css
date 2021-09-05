@@ -319,7 +319,7 @@ header .navbar a:hover {
     object-fit: cover;
 }
 
-.portfolio .box-container {
+.portfolio .container {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
