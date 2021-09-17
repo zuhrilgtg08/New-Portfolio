@@ -485,6 +485,10 @@ header .navbar a:hover {
     .gallery{
         padding: 20px;
     }
+
+    .gallery .container-slide {
+        width: 95%;
+    }
 }
 
 @media (max-width: 450px) {

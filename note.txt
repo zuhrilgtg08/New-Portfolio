@@ -91,7 +91,7 @@
 
 
 @media (max-width: 768px) {
-    .gallery .box-container .popup-image img {
+    .gallery .container-slide {
         width: 95%;
     }
 
