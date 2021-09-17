@@ -272,8 +272,8 @@ header .navbar a:hover {
 }
 
 .gallery .container-slide {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(autofit, minmax(270px, 1fr));
     gap: 1.5rem;
 }
 
@@ -480,10 +480,6 @@ header .navbar a:hover {
 @media (max-width: 768px){
     .services{
         padding: 20px;
-    }
-
-    .gallery .container-slide{
-        margin-right: 50px;
     }
 }
 
