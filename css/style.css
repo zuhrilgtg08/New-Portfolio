@@ -272,15 +272,15 @@ header .navbar a:hover {
 }
 
 .gallery .container-slide {
-    display: grid;
-    grid-template-columns: repeat(autofit, minmax(270px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 1.5rem;
 }
 
 .gallery .container-slide a {
     height: 200px;
     width: 300px;
-    margin: 20px;
+    margin: 17px auto;
     border-radius: .5rem;
     overflow: hidden;
     box-shadow: 0 1rem .5rem rgba(0, 0, 0, .3);
