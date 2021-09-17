@@ -481,6 +481,10 @@ header .navbar a:hover {
     .services{
         padding: 20px;
     }
+
+    .gallery{
+        margin: 50px auto;
+    }
 }
 
 @media (max-width: 450px) {
