@@ -481,10 +481,6 @@ header .navbar a:hover {
     .services{
         padding: 20px;
     }
-
-    .gallery{
-        padding: inherit;
-    }
 }
 
 @media (max-width: 450px) {
