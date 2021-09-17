@@ -482,7 +482,7 @@ header .navbar a:hover {
         padding: 20px;
     }
 
-    .gallery{
+    .gallery .container-slide{
         margin: 50px auto;
     }
 }
