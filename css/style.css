@@ -483,11 +483,7 @@ header .navbar a:hover {
     }
 
     .gallery{
-        padding: 1.5rem;
-    }
-
-    .gallery .container-slide {
-        width: 100%;
+        padding: .7rem;
     }
 }
 
